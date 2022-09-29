@@ -28,99 +28,105 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new ReaLTaiizor.Controls.Button();
-            this.button2 = new ReaLTaiizor.Controls.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button3 = new ReaLTaiizor.Controls.Button();
-            this.button4 = new ReaLTaiizor.Controls.Button();
+            this.tbb = new System.Windows.Forms.TextBox();
+            this.bb = new ReaLTaiizor.Controls.Button();
+            this.b = new ReaLTaiizor.Controls.Button();
+            this.tbr = new System.Windows.Forms.TextBox();
+            this.br = new ReaLTaiizor.Controls.Button();
+            this.r = new ReaLTaiizor.Controls.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // tbb
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Black;
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(13, 13);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(354, 22);
-            this.textBox1.TabIndex = 0;
+            this.tbb.BackColor = System.Drawing.Color.Black;
+            this.tbb.ForeColor = System.Drawing.Color.White;
+            this.tbb.Location = new System.Drawing.Point(13, 13);
+            this.tbb.Name = "tbb";
+            this.tbb.ReadOnly = true;
+            this.tbb.Size = new System.Drawing.Size(354, 22);
+            this.tbb.TabIndex = 0;
             // 
-            // button1
+            // bb
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = null;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.button1.Location = new System.Drawing.Point(310, 41);
-            this.button1.Name = "button1";
-            this.button1.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.button1.Size = new System.Drawing.Size(57, 26);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Explore";
-            this.button1.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.bb.BackColor = System.Drawing.Color.Transparent;
+            this.bb.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bb.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.bb.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bb.Image = null;
+            this.bb.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bb.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.bb.Location = new System.Drawing.Point(310, 41);
+            this.bb.Name = "bb";
+            this.bb.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.bb.Size = new System.Drawing.Size(57, 26);
+            this.bb.TabIndex = 1;
+            this.bb.Text = "Explore";
+            this.bb.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.bb.Click += new System.EventHandler(this.bb_Click);
             // 
-            // button2
+            // b
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = null;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.button2.Location = new System.Drawing.Point(310, 73);
-            this.button2.Name = "button2";
-            this.button2.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.button2.Size = new System.Drawing.Size(57, 26);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Backup";
-            this.button2.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.b.BackColor = System.Drawing.Color.Transparent;
+            this.b.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.b.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.b.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.b.Image = null;
+            this.b.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.b.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.b.Location = new System.Drawing.Point(310, 73);
+            this.b.Name = "b";
+            this.b.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.b.Size = new System.Drawing.Size(57, 26);
+            this.b.TabIndex = 1;
+            this.b.Text = "Backup";
+            this.b.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.b.Click += new System.EventHandler(this.b_Click);
             // 
-            // textBox2
+            // tbr
             // 
-            this.textBox2.BackColor = System.Drawing.Color.Black;
-            this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(12, 105);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(354, 22);
-            this.textBox2.TabIndex = 0;
+            this.tbr.BackColor = System.Drawing.Color.Black;
+            this.tbr.ForeColor = System.Drawing.Color.White;
+            this.tbr.Location = new System.Drawing.Point(12, 105);
+            this.tbr.Name = "tbr";
+            this.tbr.ReadOnly = true;
+            this.tbr.Size = new System.Drawing.Size(354, 22);
+            this.tbr.TabIndex = 0;
             // 
-            // button3
+            // br
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Image = null;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.button3.Location = new System.Drawing.Point(309, 133);
-            this.button3.Name = "button3";
-            this.button3.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.button3.Size = new System.Drawing.Size(57, 26);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Explore";
-            this.button3.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.br.BackColor = System.Drawing.Color.Transparent;
+            this.br.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.br.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.br.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.br.Image = null;
+            this.br.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.br.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.br.Location = new System.Drawing.Point(309, 133);
+            this.br.Name = "br";
+            this.br.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.br.Size = new System.Drawing.Size(57, 26);
+            this.br.TabIndex = 1;
+            this.br.Text = "Explore";
+            this.br.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.br.Click += new System.EventHandler(this.br_Click);
             // 
-            // button4
+            // r
             // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Image = null;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.button4.Location = new System.Drawing.Point(309, 165);
-            this.button4.Name = "button4";
-            this.button4.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            this.button4.Size = new System.Drawing.Size(57, 26);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "Restore";
-            this.button4.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.r.BackColor = System.Drawing.Color.Transparent;
+            this.r.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.r.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.r.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.r.Image = null;
+            this.r.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.r.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
+            this.r.Location = new System.Drawing.Point(309, 165);
+            this.r.Name = "r";
+            this.r.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            this.r.Size = new System.Drawing.Size(57, 26);
+            this.r.TabIndex = 1;
+            this.r.Text = "Restore";
+            this.r.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.r.Click += new System.EventHandler(this.r_Click);
             // 
             // Main
             // 
@@ -128,12 +134,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(382, 215);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.r);
+            this.Controls.Add(this.b);
+            this.Controls.Add(this.br);
+            this.Controls.Add(this.bb);
+            this.Controls.Add(this.tbr);
+            this.Controls.Add(this.tbb);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -147,12 +153,12 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private ReaLTaiizor.Controls.Button button1;
-        private ReaLTaiizor.Controls.Button button2;
-        private System.Windows.Forms.TextBox textBox2;
-        private ReaLTaiizor.Controls.Button button3;
-        private ReaLTaiizor.Controls.Button button4;
+        private System.Windows.Forms.TextBox tbb;
+        private ReaLTaiizor.Controls.Button bb;
+        private ReaLTaiizor.Controls.Button b;
+        private System.Windows.Forms.TextBox tbr;
+        private ReaLTaiizor.Controls.Button br;
+        private ReaLTaiizor.Controls.Button r;
     }
 }
 
