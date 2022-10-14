@@ -31,4 +31,12 @@
 ::
 ::
 ::978f952a14a936cc963da21a135fa983
-C:\Windows\System32\pnputil.exe /add-driver ".\*.inf" /subdirs /install
+@echo off
+echo PS Drv GUI by STY1001
+title PS Drv by GUI by STY1001
+timeout -t 3
+pnputil.exe /add-driver ".\*.inf" /subdirs /install
+echo Done! Rebooting in 10 sec. Press any key to cancel.
+shutdown -r -t 10
+timeout -t 13
+shutdown -a 
