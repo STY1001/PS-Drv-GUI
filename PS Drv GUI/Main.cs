@@ -52,7 +52,8 @@ namespace PS_Drv_GUI
 
                 if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
                 {
-                    tbb.Text = fbd.SelectedPath + "\\Drv_" + DateTime.Now.ToString("HH-mm_dd-MM-yy");
+                    tbb.Text = fbd.SelectedPath + "\\PS_Drv_" + DateTime.Now.ToString("HH-mm_dd-MM-yy");
+                    tbb.Text = tbb.Text.Replace("\\\\", "\\");
                 }
             }
         }
