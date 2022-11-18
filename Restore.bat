@@ -34,6 +34,7 @@
 @echo off
 echo PS Drv GUI by STY1001
 title PS Drv by GUI by STY1001
+echo Restoring...
 timeout -t 3
 pnputil.exe /add-driver ".\*.inf" /subdirs /install
 echo Done! Rebooting in 10 sec. Press any key to cancel.
